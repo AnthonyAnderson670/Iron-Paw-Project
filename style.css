@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* address and number */
+.contact-info {
+	color: #191919;
+}
+.contact-info:hover {
+	color: #191919;
+}
+
+/* form */
+.error {
+	color: red;
+	size: 80%
+}
+.hidden {
+	display: none;
+}
+
+
+/* main section of each page */
+body {
+	font: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	background-image: url("Logo/black.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: repeat-y;
+}
+
+.container {
+	text-align: center;
+	background-color: #191919;
+}
+
+.main {
+	display: table-cell;
+	background-color: #B4B4B4;
+	font-size: 105%;
+	padding: 15px;
+	vertical-align: top;
+	width: 80%;
+}
+
+.main h1, .main h2, .main h3 {
+	color: #620708;
+}
+
+
+#slogan h1, #slogan h2 {
+	font-size: 30px;
+}
+
+#about_img {
+	border-radius: 15%;
+}
+
+/* services */
+.service {
+	background-size: cover;
+	background-position: center;
+	border-width: medium;
+	border-style: inset;
+	border-color: #333333;
+	margin: 5px 0px;
+}
+
+#weld {
+	background-image: url("services/IMG_20181102_153702332.png");
+}
+
+#water {
+	background-image: url("services/IMG_0830.png");
+}
+
+#repair {
+	background-image: url("services/IMG_20170915_111535571.png");
+}
+
+#automotive {
+	background-image: url("services/437.png");
+}
+
+.service ul li {
+	text-align: left;
+	margin: auto;
+	list-style-image: url("services/ironpawlogo2018.png");
+	list-style-position: inside;
+	font-size: 80%;
+}
+
+/* footer */
+.footer {
+	background-color: #B4B4B4;
+	text-align: center;
+	padding: 15px;
+	margin: 10px 0px 0px 0px;
+	font-size: 90%;
+}
+
+/* photo gallery tabs */
+.nav-link {
+	color: #191919;
+}
+.nav-link:hover {
+	color:#191919
+}
+
+
+/* Style the Image Used to Trigger the Modal */
+.myImg {
+  	border-radius: 5px;
+  	cursor: pointer;
+  	transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  	display: none; /* Hidden by default */
+  	position: fixed; /* Stay in place */
+  	z-index: 1; /* Sit on top */
+  	padding-top: 100px; /* Location of the box */
+  	left: 0;
+  	top: 0;
+  	width: 100%; /* Full width */
+  	height: 100%; /* Full height */
+  	overflow: auto; /* Enable scroll if needed */
+  	background-color: rgb(0,0,0); /* Fallback color */
+  	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  	margin: auto;
+  	display: block;
+  	width: 80%;
+  	max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  	margin: auto;
+  	display: block;
+  	width: 80%;
+  	max-width: 700px;
+  	text-align: center;
+  	color: #ccc;
+  	padding: 10px 0;
+  	height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+  	animation-name: zoom;
+  	animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  	from {transform:scale(0)} 
+  	to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  	position: absolute;
+  	top: 15px;
+  	right: 35px;
+  	color: #f1f1f1;
+  	font-size: 40px;
+  	font-weight: bold;
+  	transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+	color: #bbb;
+  	text-decoration: none;
+  	cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  	.modal-content {
+    	width: 100%;
+  	}
+}
